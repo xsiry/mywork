@@ -87,12 +87,12 @@ function defineMenuHandler(){
       var win = Ext.create('Ninja.window.MarketTicktWindow');
       win.show();
     },
-    // investors: function(){
-    //   Ext.ux.menu.StoreMenu.getHandler('change_workspace').call(this, {
-    //     id: 'investors',
-    //     className: 'Ninja.panel.InvestorsPanel'
-    //   });
-    // },
+    investors: function(){
+      Ext.ux.menu.StoreMenu.getHandler('change_workspace').call(this, {
+        id: 'investors',
+        className: 'Ninja.panel.InvestorsPanel'
+      });
+    },
     my_investors: function(){
       Ext.ux.menu.StoreMenu.getHandler('change_workspace').call(this, {
         id: 'my_investors',

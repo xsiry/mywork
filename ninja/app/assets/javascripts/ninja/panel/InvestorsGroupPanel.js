@@ -18,11 +18,6 @@ Ext.define('Ninja.panel.InvestorsGroupPanel',{
         },
         itemclick:function(cmp, model){
           me.loadGroupMember(model.get('id'));
-        },
-        selectonchange:function(cmp, records){
-          if(records.length>0){
-            
-          }
         }
       }
     });

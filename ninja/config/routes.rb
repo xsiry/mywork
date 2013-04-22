@@ -1,9 +1,8 @@
 Ninja::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
-  root :to => 'pivot#index'
+  root :to => 'welcome#index'
   
-  match 'home' => 'welcome#index'
   match 'websockets/client' => 'websockets#client', :as => :ws_client
 
   match 'captcha'    => 'captcha#simple_captcha',   :as => :captcha,  :via => :get

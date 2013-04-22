@@ -66,7 +66,6 @@ Ext.define('Ninja.data.WebSocketStore', {
   },
 
   unsubscribe: function(investor, Data, options) {
-    alert("on");
     var me = this;
     
     investor = investor || me.investor;

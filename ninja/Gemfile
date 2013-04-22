@@ -1,5 +1,6 @@
 #source 'http://rubygems.org'
-source 'http://gems.taodinet.com:8808'
+#source 'http://gems.taodinet.com:8808'
+source 'http://ruby.taobao.org/'
 
 gem 'rails', '3.2.13'
 gem 'rake'
@@ -7,7 +8,7 @@ gem 'rake'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-# gem 'rb-readline'
+#gem 'rb-readline'
 gem 'nokogiri'
 gem 'mechanize'
 gem 'daemons'
@@ -34,8 +35,8 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'therubyracer', :platforms => :ruby
   gem 'execjs'
+  gem 'therubyracer', :platforms => :ruby
   
   gem 'uglifier', '>= 1.0.3'
 end
@@ -58,8 +59,8 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'debugger'
 group :development do
-#  gem "better_errors"
-#  gem "binding_of_caller"
+  gem "better_errors"
+  gem "binding_of_caller"
 
   gem 'rspec-rails'
   gem "rails-erd"
@@ -70,7 +71,7 @@ group :development do
   gem 'guard-bundler'
   gem 'guard-rails'
   gem 'guard-livereload'
-#gem 'guard-migrate'
+  gem 'guard-migrate'
 
   gem 'headless'
   unless ENV["CI"]
@@ -80,7 +81,7 @@ group :development do
 end
 
 group :test do
-#  gem 'capybara'
+  gem 'capybara'
   gem 'spork'
   gem 'database_cleaner'
   gem 'fuubar'
@@ -95,14 +96,14 @@ group :test do
     gem 'libnotify'
   end
   if RUBY_VERSION.to_f >= 1.9
-#    gem 'factory_girl_rails', '~> 3.0.0'
+    gem 'factory_girl_rails', '~> 3.0.0'
   else
-#    gem 'factory_girl_rails', '~> 1.7.0'
+    gem 'factory_girl_rails', '~> 1.7.0'
   end  
 end
 
 group :production do
-#gem 'thin'
-#  gem 'god'
-#  gem 'unicorn', :platform => :ruby
+gem 'thin'
+  gem 'god'
+  gem 'unicorn', :platform => :ruby
 end

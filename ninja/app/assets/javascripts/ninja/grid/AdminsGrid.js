@@ -35,10 +35,8 @@ Ext.define('Ninja.grid.AdminsGrid', {
 				{ xtype: 'rownumberer',width: 30,sortable: false},
 				{text: '帐号',  dataIndex:'login', flex:1},
 				{text: '姓名',  dataIndex:'name', flex:1},
-				{text: '角色',  dataIndex:'role_id',flex:1},  
-				{text: '备注',  dataIndex:'comment',flex:1},
-				{text: '标签1', dataIndex:'',flex:1},
-				{text: '标签2', dataIndex:'',flex:1}
+				{text: '角色',  dataIndex:'role.name',flex:1},  
+				{text: '备注',  dataIndex:'comment',flex:1}
 			]};
 		return columns;
 	},
@@ -50,10 +48,8 @@ Ext.define('Ninja.grid.AdminsGrid', {
 			fields:[
 				{name: 'login'},
 				{name: 'name'},
-				{name: 'role_id'},
-				{name: 'comment'},
-				{name: ''},
-				{name: ''}
+				{name: 'role.name'},
+				{name: 'comment'}
 			],
 			autoLoad: false,
 			remoteSort: false,

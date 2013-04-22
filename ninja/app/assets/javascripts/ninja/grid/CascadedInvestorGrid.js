@@ -83,9 +83,9 @@ Ext.define('Ninja.grid.CascadedInvestorGrid', {
         store:store
       });
 
-      // grid.on('itemclick', function(view) {
-      //     me.getView().getSelectionModel().deselectAll();
-      // });
+      grid.on('itemclick', function(view) {
+         me.getView().getSelectionModel().deselectAll();
+      });
 
      me.gridMlement.swallowEvent(['click', 'mousedown', 'mouseup', 'dblclick'], true);
 
