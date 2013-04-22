@@ -1,0 +1,13 @@
+<body style = "background-color:#BEBEBE;">
+  <div style="font-size:20pt; margin-top:20px; " align='center'>
+    <% if @error %>
+       <b><%= @error %></b> 
+    <% else %>
+      <% if @v_pstatus == "20" %>
+        <b>您已经成功支付<span style="color:red"><%= @v_amount %></span> 元(订单号:<%= @v_idx %>)</b>
+      <% else %>
+        <b>您的订单支付失败<span style="color:red"><%= @v_amount %></span> 元(订单号:<%= @v_idx %>)</b>
+      <% end %>
+  <% end %>  
+  </div>
+</body>

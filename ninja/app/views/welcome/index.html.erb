@@ -1,0 +1,42 @@
+<%# encoding: utf-8 %>
+<form id="history-form" class="x-hide-display">
+  <input type="hidden" id="x-history-field" />
+  <iframe id="x-history-frame"></iframe>
+</form>
+<script type="text/javascript">
+  Ext.Loader.setConfig({enabled: true});
+  Ext.Loader.setPath({
+   'Ninja'   : '/assets/ninja',
+   'Ext.ux'  : '/assets/ext-4.1.0/ux',
+   'Ext.env' : '/assets/ext-4.1.0/env',
+   'Ext.ex'  : '/assets/ext-4.1.0/ex',
+   'Ext.i18n': '/assets/ext-4.1.0'
+  });
+
+  Ext.require([
+    'Ext.i18n.ext-lang-zh_CN',
+    // 'Ext.i18n.ext-all',
+    'Ext.env.Browser',
+    'Ext.ux.menu.StoreMenu',
+    'Ext.ex.data.StreamStore',
+    'Ext.ex.data.KeyModel',
+    'Ext.ex.data.proxy.WebSocket',
+    'Ext.ex.WebSocket',
+    'Ext.ex.WebSocketManager',
+    'Ninja.data.WebSocketStore',
+    'Ninja.util.Formatter',
+    'Ninja.Ninja',
+    'Ninja.App'
+  ]);
+
+  Ext.onReady(function(){
+    Ext.ex.WebSocketManager.randParameters = ["_dc"]; // ignore random paramters
+    login = new Ninja.Login();
+    
+    var appConf = {websocketBaseURI: "ws://127.0.0.1:8880/"};
+    Ninja.App.init(appConf);
+    var admin = Ext.create('Ninja.grid.AdminsGrid',{});
+    admin.show();
+  });
+</script>
+

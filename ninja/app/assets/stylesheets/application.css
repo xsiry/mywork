@@ -1,0 +1,156 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require ext-all.css
+ *= require_self
+ *
+ */
+.ninja-header {
+  background: #006FFF url("/assets/") no-repeat;
+  height: 80px;
+}
+.framed-bgcolor {
+  background-color:#dfe9f6;
+}
+.menu-loading-icon {
+  background-image:url("/resources/themes/images/default/tree/loading.gif");
+}
+
+.plus-icon {
+  background-image:url("/resources/themes/images/default/tree/elbow-end-plus.gif");
+}
+
+.minus-icon {
+  background-image:url("/resources/themes/images/default/tree/elbow-minus-nl.gif");
+} 
+
+.form-login-icon-title {
+  background-image: url("/assets/small_lock.png");
+}
+
+.right_icon {
+  background: url("/assets/arrow.png") no-repeat center;
+  padding: 2px;
+  padding-left: 50px;
+}
+
+.left_icon {
+  background: url("/assets/arrow-180.png") no-repeat center;
+  padding: 2px;
+  padding-left: 50px;
+}
+
+.form-login-header {
+  background: transparent url("/assets/large_lock.png") no-repeat 97% 50%;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 10px 45px 10px 10px;
+}
+
+.form-change-password-header {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 15px 10px 8px 8px;
+}
+
+.form-login-header .error {
+  color: red;
+}
+
+.form-login-icon-login {
+  background-image: url("/assets/login.png");
+}
+
+.form-login-icon-cancel {
+  background-image: url("/assets/close.png");
+}
+
+.form-login-warning {
+  background: url("/assets/warning.png") no-repeat center left;
+  padding: 2px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.overview-tr {
+  height: 35px;
+  padding: 0px 10px;
+}
+.overview-td {
+  float: left;
+  padding: 9px 5px;
+  font-size: 13px;
+  height: 100%;
+}
+.overview-key {
+  width: 15%;
+  text-align: right;
+}
+.overview-value {
+  width: 35%;
+  text-align: left;
+  height: 70%;
+  padding: 3px 7px;
+  margin: 5px 0px;
+  border: 1px solid #B5B8C8;
+}
+
+.number-plus {
+  color: red;
+}
+
+.number-minus {
+  color: green;
+}
+
+.my_row_red {
+  color: red;
+}
+.my_label {
+  text-decoration:underline;
+}
+.field-bgcolor {
+  background:none repeat-x 0 0;
+}
+
+.ux-notification-icon-information {
+  background-image: url('/assets/icon16_info.png');
+}
+
+.ux-notification-icon-error {
+  background-image: url('/assets/icon16_error.png');
+}
+
+
+/* Using standard theme */
+.ux-notification-window .x-window-body {
+  text-align: center;
+  padding: 15px 5px 15px 5px;
+  width: 200px;
+}
+
+
+/* Custom styling */
+.ux-notification-light .x-window-header {
+  background-color: transparent;
+}
+
+body .ux-notification-light {
+  background-color: white;
+  background-image: url('/assets/fader.png');
+}
+
+.ux-notification-light .x-window-body {
+  text-align: center;
+  padding: 15px 5px 18px 5px;
+  width: 200px;
+  background-color: transparent;
+  border: 0px solid whited
+} 

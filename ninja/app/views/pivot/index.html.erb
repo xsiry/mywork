@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>温州市富沙酒业有限公司</title>
+    <script language="JavaScript">
+      function pageY(elem) {
+        return elem.offsetParent ? (elem.offsetTop + pageY(elem.offsetParent)) : elem.offsetTop;
+      }
+      var buffer = 0; //scroll bar buffer
+      function resizeIframe() {
+        var height = window.innerHeight || document.body.clientHeight || document.documentElement.clientHeight;
+        height -= pageY(document.getElementById('ifm'))+ buffer ;
+        height = (height < 0) ? 0 : height;
+        document.getElementById('ifm').style.height = height + 'px';
+      }
+      window.onresize = resizeIframe;
+      window.onload = resizeIframe;
+    </script>
+  </head>
+
+  <body style="overflow-y:hidden;margin:0px">
+    <iframe id="ifm" src="http://forcachina.host6.geishost.com" style="display:block; width:100%; border:none; margin-left:0px" marginheight=0 marginwidth=0 frameborder="0" scrolling="auto">
+    </iframe>
+  </body>
+</html>

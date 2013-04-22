@@ -1,0 +1,2 @@
+module ChinabankHelper
+end

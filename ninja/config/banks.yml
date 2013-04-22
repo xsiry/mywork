@@ -1,0 +1,87 @@
+merchants:
+  tenpay:
+    auth_id    :   "1215635801"
+    auth_key   :   "c5b0b6b1f3c45e3b70ce83396895f08d"
+    paid_url   :   "http://www.lktz.net:5800/product/paid"
+    notify_url :   "http://www.lktz.net:5800/product/notify"
+    banks:
+      "CMBCHINA"  :     1001     #招商银行借记卡
+      "ICBC"      :     1002     #中国工商银行
+      "CCB"       :     1003     #中国建设银行  
+      "SPDB"      :     1004     #上海浦东发展银行
+      "ABC"       :     1005     #中国农业银行
+      "CMBC"      :     1006     #中国民生银行
+      "SDB"       :     1008     #深圳发展银行
+      "CIB"       :     1009     #兴业银行
+      "PAB"       :     1010     #平安银行
+      "BOCO"      :     1020     #交通银行
+      "ECITIC"    :     1021     #中信银行
+      "CEB"       :     1022     #中国光大银行
+      "SHB"       :     1024     #上海银行
+      "HXB"       :     1025     #华夏银行
+      "GDB"       :     1027     #广东发展银行
+      "POST"      :     1028     #中国邮政储蓄银行（仅支持广东地区）
+      "BCCB"      :     1032     #北京银行
+      "BOC"       :     1052     #中国银行
+
+  chinabank:
+    auth_id   :   "22655595"
+    auth_key  :   "5362SRRI1235231"
+    paid_url  :   "http://pay.lktz.net/product/paid"
+    banks:
+      "ICBC"      :   1025
+      "ICBC_2"    :   1023
+      "CMBC"      :   308
+      "CCB"       :   105
+      "ABC"       :   103
+      "BOC"       :   104
+      "BOCOM"     :   3407
+      "HXB"       :   3283
+      "CIB"       :   309
+      "CMSB"      :   305
+      "CMSB_2"    :   3051
+      "GDB"       :   306
+      "PAB"       :   307
+      "SHDB"      :   314
+      "ZXB"       :   313
+      "CEB"       :   312
+      "UP"        :   327
+
+  yeepay:
+    #auth_id    :          "10011838766"
+    #auth_key   :          "4h99T3548V70A0eZm739CixgSq10wQ847QK25HXrGS873aV2VdTjUl4ir564"
+    #auth_id    :          "10012028365"  
+    #auth_key   :          "mFj96NW9i35Be3f9u7n2568pKKZ3lsiIi42T73JWaUnZ5yo08aihqZrl40ts"
+    paid_url   :          "http://www.lktz.net:5800/product/paid"
+    sms_notify_number :   [13857728226, 15857700006, 15958185414]
+    banks: 
+      "1000000"   :       "1000000-NET"        # 易宝会员支付
+      "ICBC"      :       "ICBC-NET-B2C"       # 工商银行
+      "CMBCHINA"  :       "CMBCHINA-NET-B2C"   # 招商银行
+      "ABC"       :       "ABC-NET-B2C"        # 中国农业银行
+      "CCB"       :       "CCB-NET-B2C"        # 建设银行  
+      "BCCB"      :       "BCCB-NET-B2C"       # 北京银行
+      "BOCO"      :       "BOCO-NET-B2C"       # 交通银行
+      "CIB"       :       "CIB-NET-B2C"        # 兴业银行
+      "NJCB"      :       "NJCB-NET-B2C"       # 南京银行
+      "CMBC"      :       "CMBC-NET-B2C"       # 民生银行
+      "CEB"       :       "CEB-NET-B2C"        # 光大银行
+      "BOC"       :       "BOC-NET-B2C"        # 中国银行
+      "PAB"       :       "PINGANBANK-NET"     # 平安银行
+      "CBHB"      :       "CBHB-NET-B2C"       # 渤海银行
+      "HKBEA"     :       "HKBEA-NET-B2C"      # 东亚银行
+      "NBCB"      :       "NBCB-NET-B2C"       # 宁波银行
+      "ECITIC"    :       "ECITIC-NET-B2C"     # 中信银行
+      "SDB"       :       "SDB-NET-B2C"        # 深圳发展银行
+      "GDB"       :       "GDB-NET-B2C"        # 广发银行
+      "SHB"       :       "SHB-NET-B2C"        # 上海银行
+      "SPDB"      :       "SPDB-NET-B2C"       # 上海浦东银行
+      "POST"      :       "POST-NET-B2C"       # 中国邮政
+      "BJRCB"     :       "BJRCB-NET-B2C"      # 北京农村商业银行
+      "HXB"       :       "HXB-NET-B2C"        # 华夏银行
+      "CZ"        :       "CZ-NET-B2C"         # 浙商银行
+      "HZBANK"    :       "HZBANK-NET-B2C"     # 杭州银行
+      "SRCB"      :       "SRCB-NET-B2C"       # 上海农村商业银行
+      "NCBBANK"   :       "NCBBANK-NET-B2C"    # 南洋商业银行
+      "SCCB"      :       "SCCB-NET-B2C"       # 河北银行
+      "ZJTLCB"    :       "ZJTLCB-NET-B2C"     # 泰隆银行

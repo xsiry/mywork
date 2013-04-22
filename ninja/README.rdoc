@@ -1,0 +1,80 @@
+1.Keyword arguments
+def foo(str: "foo", num: 424242) #直接赋默认值
+  [str, num]
+end
+
+foo(str: 'buz', num: 9) #=> ['buz', 9]
+foo(str: 'bar') # => ['bar', 424242]
+foo # => ['foo', 424242]
+foo(bar: 'buz') # => ArgumentError
+
+
+**options #代表一个散列
+def foo(str: "foo", num: 424242, **options)
+  [str, num, options]
+end
+
+foo #=> ['foo', 424242, {}]
+foo(check: true) # => ['foo', 424242, {check: true}]
+
+
+%i(foo bar baz) # => [:foo, :bar, :baz] 
+
+
+2. copy-on-write
+std::string x("Hello");
+ 
+std::string y = x;  // x and y use the same buffer
+ 
+y += ", World!";    // now y uses a different buffer
+                    // x still uses the same old buffer
+
+3. "Module#prepend"
+module FooBar
+  def hello
+    puts 2
+    super
+  end
+end
+
+class Foo
+  def hello
+    puts 'hello'
+  end
+end
+
+class Bar < Foo
+  prepend FooBar
+
+  def hello
+    puts 1
+    super
+  end
+end
+
+Bar.new.hello
+output =>
+2
+1
+"hello"                
+
+question:
+1.Dtrace support
+2.'Enumerable#lazy'
+
+iconv -f gbk -t utf8 File > File2
+
+
+HTTPS和HTTP的区别
+一、https协议需要到ca申请证书，一般免费证书很少，需要交费。
+二、http是超文本传输协议，信息是明文传输，https 则是具有安全性的ssl加密传输协议。
+三、http和https使用的是完全不同的连接方式，用的端口也不一样，前者是80，后者是443。
+四、http的连接很简单，是无状态的；HTTPS协议是由SSL+HTTP协议构建的可进行加密传输、身份认证的网络协议，比http协议安全。
+
+全文检索的推荐用sunspot
+
+22655595   
+5362SRRI1235231 
+
+https://pragmatic.ly/pricing
+http://www.smashingmagazine.com/2008/10/13/pricing-tables-showcase-examples-and-best-practices/

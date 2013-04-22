@@ -1,0 +1,35 @@
+<%# encoding: utf-8 %>
+<form id="history-form" class="x-hide-display">
+  <input type="hidden" id="x-history-field" />
+  <iframe id="x-history-frame"></iframe>
+</form>
+<script type="text/javascript">
+  Ext.Loader.setConfig({enabled: true});
+  Ext.Loader.setPath({
+   'Ninja'   : '/assets/ninja',
+   'Ext.ux'  : '/assets/ext-4.1.0/ux',
+   'Ext.env' : '/assets/ext-4.1.0/env',
+   'Ext.ex'  : '/assets/ext-4.1.0/ex',
+   'Ext.i18n': '/assets/ext-4.1.0'
+  });
+
+  Ext.require([
+    'Ext.i18n.ext-lang-zh_CN',
+    'Ext.env.Browser',
+    'Ninja.grid.WithdrawalsGrid'
+  ]);
+
+  Ext.onReady(function(){
+    var viewport =  Ext.create("Ext.container.Viewport", {
+
+    });
+    var withdrawalsGrid = new Ninja.grid.WithdrawalsGrid();
+    Ext.create('Ext.container.Viewport', {
+        layout: 'fit',
+        renderTo: Ext.getBody(),
+        items: [withdrawalsGrid]
+    });
+    
+  });
+</script>
+
